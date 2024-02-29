@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: white;
+        }
+
+        @font-face {
+            font-family: myfont;
+            src: url('BalooBhai-Regular.ttf');
+        }
+
+        * {
+            font-family: myfont;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            column-gap: 80px;
+
+        }
+
+        .icon {
+            padding: 0px 255px 0px 0px;
+            font-size: 0px;
+        }
+
+        .item a {
+            text-decoration: none;
+        }
+
+        .logoimg img {
+            height: 110px;
+            width: 168px;
+            position: relative;
+            bottom: 37px;
+            top: -112px;
+            right: 0px;
+            left: -34px;
+            z-index: -1;
+        }
+
+        .search input {
+            border-radius: 17px;
+            padding: 5px 4px 4px 15px;
+
+        }
+
+        .fa-search {
+            font-size: 25px;
+            color: rgb(7, 184, 215);
+        }
+
+        .fa {
+            text-decoration: none;
+            /* background-color: rgb(179, 229, 229); */
+            padding: 4px 12px 8px 9px;
+            margin-left: 7px;
+            border-radius: 4px;
+            position: relative;
+            bottom: 36px;
+            left: 80%;
+        }
+
+        .item a {
+            color: black;
+        }
+
+        .item a:hover {
+            color: rgb(7, 92, 161);
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn {
+            border-radius: 4px;
+            padding: 2px 17px 1px 15px;
+            margin-left: 44px;
+            background-color: rgb(197 253 253);
+            box-shadow: 3px 4px 0px 0px #3f3c3c;
+        }
+
+        .btn:hover {
+            background-color: rgb(49, 208, 208);
+
+        }
+
+        p {
+            border: 2px solid blue;
+            display: inline;
+            border-radius: 20px;
+            background-color: rgb(14, 96, 164);
+            border: none;
+            padding: 6px 36px 5px 25px;
+            position: relative;
+            bottom: 25px;
+            left: 102px;
+            color: white;
+            box-shadow: -1px 4px 0px 0px #8baaba;
+
+        }
+
+
+        h1 {
+            position: relative;
+            bottom: 25px;
+            left: 102px;
+            color: rgb(129, 212, 212);
+            font-size: 65px;
+            padding-right: 74%;
+        }
+
+        h2 {
+            position: relative;
+            bottom: 93px;
+            left: 102px;
+            font-size: 60px;
+            padding-right: 50%;
+        }
+
+        .para2 {
+            padding: 0px 922px 16px 98px;
+            position: relative;
+            bottom: 113px;
+            left: 3px;
+
+        }
+
+        .shop {
+            display: inline;
+            border: 2px solid rgb(129, 212, 212);
+
+            position: relative;
+            bottom: 453px;
+            left: 98px;
+            border-radius: 20px;
+            background-color: rgb(14, 96, 164);
+            border: none;
+            padding: 6px 36px 5px 25px;
+            font-size: large;
+            box-shadow: -1px 4px 0px 0px #8baaba;
+
+        }
+
+        .shop a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .shop:hover {
+            background-color: rgb(20, 121, 152);
+        }
+
+        .photoelement1 {
+            display: inline;
+            bottom: 541px;
+            left: 51%;
+            position: relative;
+            bottom: 881px;
+            left: 56%;
+
+
+
+        }
+
+        .img1 img {
+            position: relative;
+            bottom: 1518px;
+            left: 100px;
+            z-index: -1;
+            width: 25%;
+            opacity: 0.2;
+        }
+
+        .img2 img {
+            position: relative;
+            bottom: 1225px;
+            left: 459px;
+            z-index: -1;
+            width: 12%;
+            opacity: 0.5;
+        }
+
+        .img3 img {
+            position: relative;
+            bottom: 1772px;
+            left: 1182px;
+            z-index: -1;
+            width: 20%;
+            opacity: 0.3;
+        }
+
+        .img4 img {
+            position: relative;
+            bottom: 558px;
+            left: 700px;
+            z-index: -1;
+            width: 19%;
+            opacity: 0.35;
+        }
+
+        .socialmedia {
+            position: relative;
+            bottom: 600px;
+            left: 0px;
+
+        }
+
+        .follow {
+            text-align: right;
+            position: relative;
+            bottom: 4px;
+            left: -297px;
+        }
+
+        .fa-facebook {
+            color: #4267B2;
+        }
+
+        .fa-instagram {
+            color: #C13584;
+        }
+
+        .fa-twitter {
+            color: #1DA1F2;
+        }
+
+        .fa {
+            font-size: 30px;
+        }
+
+        .book {
+            display: grid;
+            grid-template-columns: 226px 232px 232px 232px 232px 251px;
+            gap: 0px 0px;
+            position: relative;
+            left: 83px;
+
+        }
+
+
+        .books {
+            border: 3px solid rgb(231 225 225);
+            width: 189px;
+            height: 436px;
+            
+        
+        }
+
+        .books img {
+            width: 189px;
+            height: 263px;
+        }
+
+        .bookname {
+            text-align: center;
+            color: grey;
+        }
+
+        .star {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .star img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .read_button {
+            margin: 26px 0px 5px 62px;
+            background-color: rgb(98, 170, 204);
+            border: none;
+            border-radius: 10px;
+            padding: 2px 18px 1px 19px;
+            color: white;
+
+
+        }
+        .read_button:hover{
+            box-shadow: 0px 0px 4px 3px #17766d;
+
+        }
+        .read_button a{
+            text-decoration: none;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <nav>
+
+
+
+        <div class="icon">f</div>
+        <div class="item"><a href="home.html">Home</a></div>
+        <div class="item"><a href="bio.html">About Us</a></div>
+        <div class="item"><a href="">Contact</a></div>
+        <div class="item"><a href="">Price</a></div>
+        <div class="search"><input type="text" placeholder="Search..."></div>
+        <button class="btn"><a href="login.html" target="_blank">Sign In</a></button>
+    </nav>
+    <div><a href="#" class="fa fa-search"></a></div>
+    <div class="logoimg"><img src="95f8588d6469a16271ea2d2fad419d00.png" alt=""></div>
+    <div class="book">
+        <div class="books"><img src="book1.jpg" alt="">
+            <div class="bookname">Quick start Guide to learn English</div>
+            <div class="star"><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg"
+                    alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt="">
+            </div><button class="read_button"><a href="Physics.pdf" target="_blank">Read</a></button>
+        </div>
+        <div class="books"><img src="book2.jpg" alt="">
+            <div class="bookname">How To Invest 10k to Earn 100cr</div>
+            <div class="star"><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg"
+                    alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt="">
+            </div><button class="read_button"><a href="Physics.pdf" target="_blank">Read</a></button>
+        </div>
+        <div class="books"><img src="book3.jpg" alt="">
+            <div class="bookname">Counting The Cost</div>
+            <div class="star"><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg"
+                    alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt="">
+            </div><button class="read_button"><a href="Physics.pdf" target="_blank">Read</a></button>
+        </div>
+        <div class="books"><img src="book4.jpg" alt="">
+            <div class="bookname">Hope</div>
+            <div class="star"><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg"
+                    alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt="">
+            </div><button class="read_button"><a href="Physics.pdf" target="_blank">Read</a></button>
+        </div>
+        <div class="books"><img src="book5.jpg" alt="">
+            <div class="bookname">Eye</div>
+            <div class="star"><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg"
+                    alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt="">
+            </div><button class="read_button"><a href="Physics.pdf" target="_blank">Read</a></button>
+        </div>
+        <div class="books"><img src="book6.jpg" alt="">
+            <div class="bookname">Wood life</div>
+            <div class="star"><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg"
+                    alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt=""><img src="graystar.svg" alt="">
+            </div><button class="read_button"><a href="Physics.pdf" target="_blank">Read</a></button>
+        </div>
+    </div>
+
+
+
+    
+    <div class="img1"><img src="Cloud-Computing.png" alt=""></div>
+    <div class="img2"><img src="Cloud-Computing.png" alt=""></div>
+    <div class="img3"><img src="Cloud-Computing.png" alt=""></div>
+    <div class="img4"><img src="Cloud-Computing.png" alt=""></div>
+    <div class="socialmedia">
+        <div class="follow">follow</div>
+        <a href="https://www.instagram.com/iambitttu?igsh=YzljYTk1ODg3Zg==" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <div class="signup">
+           
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
